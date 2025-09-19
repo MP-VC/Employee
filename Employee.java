@@ -76,4 +76,34 @@ public class Employee{
         this.yearOfBirth = yearOfBirth;
         return yearOfBirth;
     }
+    /*
+     * Gets unpaid Hours
+     */
+    public double getunpaidHours()
+    {
+        return unpaidHours;
+    }
+    /*
+     * Sets unpaid Hours
+     */
+    public double setunpaidHours(double unpaidHours)
+    {
+        this.unpaidHours = unpaidHours;
+        return unpaidHours;
+    }
+    /*
+     * Gets hourly Wage
+     */
+    public double gethourlyWage()
+    {
+        return hourlyWage;
+    }
+    /*
+     * Sets hourly Wage
+     */
+    public double sethourlyWage(double hourlyWage)
+    {
+        this.hourlyWage = hourlyWage;
+        return hourlyWage;
+    }
 }
