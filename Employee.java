@@ -72,6 +72,7 @@ public class Employee{
      */
     public int setyearOfBirth(int yearOfBirth)
     {
-        this.yearOfBirth = yearOfBirth;
+        yearOfBirth = this.yearOfBirth;
+        return yearOfBirth;
     }
 }
