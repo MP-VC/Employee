@@ -31,20 +31,47 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        // to be completed
+        if(age>=16)
+        {
+            System.out.println("You can drive");
+            return true;
+        }
+        else
+        {
+            int remainingyears = 16 - age;
+            System.out.println("You have to wait " + remainingyears);
+            return false;
+        }
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completed
+        double taxes =0.3;
+        double pay = (hourlyWage*unpaidHours)-((hourlyWage*unpaidHours)/taxes);
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        double pay = calculatePay();
+        System.out.println(fullname + " is going to be paied " + pay + "CAD");
+        unpaidHours = 0.0;
+    }
+    /*
+     * Gets year of birth
+     */
+    private int getyearOfBirth()
+    {
+        return yearOfBirth;
+    }
+    /*
+     * Sets year of birth
+     */
+    public int setyearOfBirth(int yearOfBirth)
+    {
+        this.yearOfBirth = yearOfBirth;
     }
 }
