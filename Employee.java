@@ -58,7 +58,7 @@ public class Employee{
      */
     public void paySalary(){
         double pay = calculatePay();
-        System.out.println(fullname + " is going to be paied " + pay + "CAD");
+        System.out.println(fullname + " is going to be paid " + pay + "CAD");
         unpaidHours = 0.0;
     }
     /*
