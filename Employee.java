@@ -47,7 +47,7 @@ public class Employee{
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
-    private double calculatePay(){
+    public double calculatePay(){
         double taxes =0.3;
         double pay = (hourlyWage*unpaidHours)-((hourlyWage*unpaidHours)*taxes);
         return pay;
@@ -64,7 +64,7 @@ public class Employee{
     /*
      * Gets year of birth
      */
-    private int getyearOfBirth()
+    public int getyearOfBirth()
     {
         return yearOfBirth;
     }
@@ -73,7 +73,7 @@ public class Employee{
      */
     public int setyearOfBirth(int yearOfBirth)
     {
-        yearOfBirth = this.yearOfBirth;
+        this.yearOfBirth = yearOfBirth;
         return yearOfBirth;
     }
 }
