@@ -49,7 +49,8 @@ public class Employee{
      */
     private double calculatePay(){
         double taxes =0.3;
-        double pay = (hourlyWage*unpaidHours)-((hourlyWage*unpaidHours)/taxes);
+        double pay = (hourlyWage*unpaidHours)-((hourlyWage*unpaidHours)*taxes);
+        return pay;
     }
 
     /*
